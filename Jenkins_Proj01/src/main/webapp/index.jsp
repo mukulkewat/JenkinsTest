@@ -1,5 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
-    pageEncoding="ISO-8859-1"%>
+    pageEncoding="ISO-8859-1"
+    import ="java.time.*"%>
 <!DOCTYPE html>
 <html>
 <head>
@@ -8,5 +9,6 @@
 </head>
 <body>
 <h1 style="color:red;text-align: center">Welcome to Jenkins <%= new java.util.Date() %></h1>
+<h1 style="color:red;text-align: center">Welcome to Jenkins <%= LocalTime.now() %></h1>
 </body>
 </html>
