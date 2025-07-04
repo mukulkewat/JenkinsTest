@@ -9,13 +9,17 @@
 		<div data-dojo-attach-point="centerPane"
 			data-dojo-type="dijit/layout/ContentPane"
 			data-dojo-props="region:'center'">
+			<form id="docForm">
 
 			<label for="docTitle">Doc Title:</label> <input id="docTitle"
 				name="docTitle" data-dojo-attach-point="docTitle"
 				data-dojo-type="dijit/form/TextBox" required="true"
 				placeholder="Enter doc title" />
-
-
+			
+			<label for="docClass">Doc Class:</label> <input id="docClass"
+				name="docClass" data-dojo-attach-point="docClass"
+				data-dojo-type="dijit/form/TextBox" required="true"
+				placeholder="Enter doc Class" />
 
 
 
@@ -27,7 +31,7 @@
 
 			<button data-dojo-type="dijit/form/Button" type="submit"
 				data-dojo-attach-event="onClick : display">Upload</button>
-
+	</form>
 
 
 
