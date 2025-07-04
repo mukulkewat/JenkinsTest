@@ -87,7 +87,7 @@ function(declare,
 		
 		display : function(){
 			
-			var docTitle = this.docTitle.get("value");
+			var docTitle = this.docForm.get("value");
 			console.log(docTitle)
 		}
 	});
