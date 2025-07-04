@@ -1,10 +1,12 @@
 define([
 	"dojo/_base/declare",
 	"ecm/widget/layout/_LaunchBarPane",
+	"dijit/registry",
 	"dojo/text!./templates/UploadDocument.html"
 ],
 function(declare,
 		_LaunchBarPane,
+		registry,
 		template) {
 	/**
 	 * @name employeeDocManagerDojo.UploadDocument
@@ -81,6 +83,12 @@ function(declare,
 			this.needReset = false;
 			
 			this.logExit("reset");
+		},
+		
+		display : function(){
+			var formNode = document.getElementById("docForm");
+			var formData = new FormData(formNode);
+			console.log(formData);
 		}
 	});
 });
