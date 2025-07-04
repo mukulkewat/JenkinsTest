@@ -85,8 +85,8 @@ function(declare,
 			this.logExit("reset");
 		},
 		
-		display : function(evnt){
-			evnt.preventDefault();
+		display : function(){
+			
 			var docTitle = this.docTitle.get("value");
 			console.log(docTitle)
 		}
