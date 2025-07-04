@@ -19,7 +19,7 @@ function(declare,
 		templateString: template,
 		
 		// Set to true if widget template contains DOJO widgets.
-		widgetsInTemplate: false,
+		widgetsInTemplate: true,
 
 		postCreate: function() {
 			this.logEntry("postCreate");
