@@ -10,39 +10,27 @@
 			data-dojo-type="dijit/layout/ContentPane"
 			data-dojo-props="region:'center'">
 
-
-			<div id="formContainer">
-				<h2>Employee Registration</h2>
-				<form id="docForm" data-dojo-attach-point="docForm" data-dojo-type="dijit/form/Form"
-					>
-
-					<div class="formRow">
-						<label for="docTitle">Doc Title:</label> <input id="docTitle"
-							name="docTitle" data-dojo-attach-point="docTitle" data-dojo-type="dijit/form/TextBox"
-							required="true" placeholder="Enter doc title" />
-					</div>
-
-					<div class="formRow">
-						<label for="docClass">Doc Class:</label> <input id="docClass"
-							name="docClass" data-dojo-type="dijit/form/TextBox"
-							required="true" placeholder="enter doc class" />
-					</div>
+			<label for="docTitle">Doc Title:</label> <input id="docTitle"
+				name="docTitle" data-dojo-attach-point="docTitle"
+				data-dojo-type="dijit/form/TextBox" required="true"
+				placeholder="Enter doc title" />
 
 
 
-					<!-- <div class="formRow">
+
+
+			<!-- <div class="formRow">
 						<label for="file">Doc File:</label> <input id="file" name="file"
 							data-dojo-type="dojox/form/Uploader" required="true" />
 					</div> -->
 
-					<div class="formRow" style="text-align: center;">
-						<button data-dojo-type="dijit/form/Button" type="submit" data-dojo-attach-event="onClick : display">Upload</button>
-						<button data-dojo-type="dijit/form/Button" type="reset">Clear</button>
-					</div>
 
-				</form>
+			<button data-dojo-type="dijit/form/Button" type="submit"
+				data-dojo-attach-event="onClick : display">Upload</button>
 
-			</div>
+
+
+
 		</div>
 	</div>
 
