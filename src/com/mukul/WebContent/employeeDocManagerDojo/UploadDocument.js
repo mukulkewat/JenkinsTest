@@ -86,9 +86,9 @@ function(declare,
 		},
 		
 		display : function(){
-			var formNode = document.getElementById("docForm");
-			var formData = new FormData(formNode);
-			console.log(formData);
+			
+			var docTitle = this.docForm.get("value");
+			console.log(docTitle)
 		}
 	});
 });
