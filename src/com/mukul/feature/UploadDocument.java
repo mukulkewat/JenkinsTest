@@ -58,7 +58,7 @@ public class UploadDocument extends PluginFeature {
 	 * @return A CSS style class name for the image.
 	 */
 	public String getIconUrl() {
-		return "<i class=\"fa-solid fa-upload\"></i>";
+		return "fa fa-upload";
 	}
 
 	/**
