@@ -347,7 +347,7 @@ public class EmployeeDocManager extends Plugin {
 	     */
 	    public PluginFeature[] getFeatures() {
 	    	if (pluginFeatures.length == 0) {
-				pluginFeatures = new PluginFeature[] {new com.mukul.feature.Upload Document(), new com.mukul.feature.UploadDocument()};
+				pluginFeatures = new PluginFeature[] {new com.mukul.feature.UploadDocument()};
 			}
 			return pluginFeatures;
 	    }

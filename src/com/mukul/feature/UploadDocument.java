@@ -11,7 +11,7 @@ import com.ibm.ecm.extension.PluginFeature;
  * for each desktop. Examples of features include Browse and Favorites.
  */
 public class UploadDocument extends PluginFeature {
-
+	//
 	/**
 	 * Returns an identifier that is used to describe this feature.
 	 * <p>
