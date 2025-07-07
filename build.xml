@@ -2,43 +2,55 @@
 
 <project name="EmployeeDocManagerPlugin" default="all" basedir=".">
 
-	<target name="all" depends="clean,compile,jar" />
+    <!-- Define directory properties -->
+    <property name="src.dir" value="src" />
+    <property name="build.dir" value="temp" />
+    <property name="lib.dir" value="lib" />
 
-	<path id="classpath">
-		<pathelement location="D:/Navigator/Navigator Jar/navigatorAPI.jar" />
-		<fileset dir="${lib.dir}" includes="**/*.jar"/>
-		<pathelement location="./temp" />
-	</path>
+    <!-- Build sequence -->
+    <target name="all" depends="clean,compile,jar" />
 
-	<target name="clean">
-		<delete dir="temp" />
-	</target>
+    <!-- Classpath configuration -->
+    <path id="classpath">
+        <pathelement location="D:/Navigator/Navigator Jar/navigatorAPI.jar" />
+        <fileset dir="${lib.dir}" includes="**/*.jar" />
+        <pathelement location="${build.dir}" />
+    </path>
 
-	<target name="compile">
-		<mkdir dir="temp" />
-		<javac srcdir="src" destdir="temp" source="1.8" target="1.8" debug="true">
-			<classpath refid="classpath" />
-			<include name="**/*.java" />
-		</javac>
-	</target>
+    <!-- Clean target -->
+    <target name="clean">
+        <delete dir="${build.dir}" />
+    </target>
 
-	<target name="jar">
-		<copy todir="temp">
-			<fileset dir="src">
-				<include name="**/WebContent/**" />
-			</fileset>
-		</copy>
-		<jar jarfile="EmployeeDocManagerPlugin.jar">
-			<fileset dir="./temp" includes="**/*" />
-			<manifest>
-				<attribute name="Plugin-Class" value="com.mukul.EmployeeDocManager" />
-				<section name="build">
-					<attribute name="Built-By" value="${user.name}" />
-					<attribute name="Build" value="${TODAY}" />
-				</section>
-			</manifest>
-		</jar>
-		<delete dir="./temp" />
-	</target>
+    <!-- Compile source files -->
+    <target name="compile">
+        <mkdir dir="${build.dir}" />
+        <javac srcdir="${src.dir}" destdir="${build.dir}" source="1.8" target="1.8" debug="true" includeantruntime="false">
+            <classpath refid="classpath" />
+            <include name="**/*.java" />
+        </javac>
+    </target>
+
+    <!-- Jar creation -->
+    <target name="jar">
+        <copy todir="${build.dir}">
+            <fileset dir="${src.dir}">
+                <include name="**/WebContent/**" />
+            </fileset>
+        </copy>
+
+        <jar jarfile="EmployeeDocManagerPlugin.jar">
+            <fileset dir="${build.dir}" includes="**/*" />
+            <manifest>
+                <attribute name="Plugin-Class" value="com.mukul.EmployeeDocManager" />
+                <section name="build">
+                    <attribute name="Built-By" value="${user.name}" />
+                    <attribute name="Build" value="${TODAY}" />
+                </section>
+            </manifest>
+        </jar>
+
+        <delete dir="${build.dir}" />
+    </target>
 
 </project>
