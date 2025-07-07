@@ -81,7 +81,7 @@ public class insertMetaData extends PluginService {
 		 // 1. Get metadata from request
         String docTitle = request.getParameter("docTitle");
         String docClass = request.getParameter("docClass");
-
+        System.out.println("Doctitle is:"+docTitle+", DocClass is:"+docClass);
         // 2. Get ObjectStore (assumes "TargetOS" repository in ICN)
         ObjectStore objectStore = callbacks.getP8ObjectStore("FNOS");
 
