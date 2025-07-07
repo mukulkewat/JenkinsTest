@@ -2,7 +2,14 @@
 <classpath>
 	<classpathentry kind="lib" path="C:/Users/mukulkewat/.p2/pool/plugins/org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_21.0.7.v20250502-0916/jre/lib/jrt-fs.jar"/>
 	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="src" path="resources"/>
 	<classpathentry kind="lib" path="lib/j2ee.jar"/>
 	<classpathentry kind="lib" path="D:/Navigator/Navigator Jar/navigatorAPI.jar"/>
+	<classpathentry kind="lib" path="D:/FileNetP8/FileNet Jar/Content Engine Jar/Jace 4.jar"/>
+	<classpathentry kind="lib" path="D:/FileNetP8/FileNet Jar/Content Engine Jar/log4j-1.2.16 8.jar"/>
+	<classpathentry kind="lib" path="D:/FileNetP8/FileNet Jar/Content Engine Jar/p8cel10n (1) 4.jar"/>
+	<classpathentry kind="lib" path="D:/FileNetP8/FileNet Jar/Content Engine Jar/stax-api 2.jar"/>
+	<classpathentry kind="lib" path="D:/FileNetP8/FileNet Jar/Content Engine Jar/xlxpScanner 4.jar"/>
+	<classpathentry kind="lib" path="D:/FileNetP8/FileNet Jar/Content Engine Jar/xlxpScannerUtils 4.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>

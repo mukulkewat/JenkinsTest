@@ -11,27 +11,27 @@
 			data-dojo-props="region:'center'">
 			<form id="docForm">
 
-			<label for="docTitle">Doc Title:</label> <input id="docTitle"
-				name="docTitle" data-dojo-attach-point="docTitle"
-				data-dojo-type="dijit/form/TextBox" required="true"
-				placeholder="Enter doc title" />
-			
-			<label for="docClass">Doc Class:</label> <input id="docClass"
-				name="docClass" data-dojo-attach-point="docClass"
-				data-dojo-type="dijit/form/TextBox" required="true"
-				placeholder="Enter doc Class" />
+				<label for="docTitle">Doc Title:</label> <input id="docTitle"
+					name="docTitle" data-dojo-attach-point="docTitle"
+					data-dojo-type="dijit/form/TextBox" required="true"
+					placeholder="Enter doc title" />
+			   <label for="docClass">Doc Class:</label> <input id="docClass" name="docClass"
+					data-dojo-attach-point="docClass"
+					data-dojo-type="dijit/form/TextBox" required="true"
+					placeholder="Enter doc Class" />
 
 
 
-			<!-- <div class="formRow">
+				<!-- <div class="formRow">
 						<label for="file">Doc File:</label> <input id="file" name="file"
 							data-dojo-type="dojox/form/Uploader" required="true" />
 					</div> -->
 
 
-			<button data-dojo-type="dijit/form/Button" type="submit"
-				data-dojo-attach-event="onClick : display">Upload</button>
-	</form>
+				<button data-dojo-type="dijit/form/Button" type="submit"
+					data-dojo-attach-event="onClick : display" id="submitBtn"
+					data-dojo-attach-point="submitBtn">Upload</button>
+			</form>
 
 
 
