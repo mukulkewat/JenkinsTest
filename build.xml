@@ -6,7 +6,7 @@
 
 	<path id="classpath">
 		<pathelement location="D:/Navigator/Navigator Jar/navigatorAPI.jar" />
-		<pathelement location="./lib/" />
+		<fileset dir="${lib.dir}" includes="**/*.jar"/>
 		<pathelement location="./temp" />
 	</path>
 
