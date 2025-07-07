@@ -33,7 +33,7 @@ define([
 				 * you might need to connect events to trigger the pane to update based on specific user actions.
 				 */
 				// Bind button click
-				var submitButton = registry.byId("submitBtn"); // make sure this button exists in UploadDocument.html
+				var submitButton = registry.byId("submitBtn");  // make sure this button exists in UploadDocument.html
 				if (submitButton) {
 					on(submitButton, "click", function() {
 						let docTitle = this.docTitle.get("value");
