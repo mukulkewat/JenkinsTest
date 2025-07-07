@@ -5,11 +5,11 @@
 	<classpathentry kind="src" path="resources"/>
 	<classpathentry kind="lib" path="lib/j2ee.jar"/>
 	<classpathentry kind="lib" path="D:/Navigator/Navigator Jar/navigatorAPI.jar"/>
-	<classpathentry kind="lib" path="D:/FileNetP8/FileNet Jar/Content Engine Jar/Jace 4.jar"/>
-	<classpathentry kind="lib" path="D:/FileNetP8/FileNet Jar/Content Engine Jar/log4j-1.2.16 8.jar"/>
-	<classpathentry kind="lib" path="D:/FileNetP8/FileNet Jar/Content Engine Jar/p8cel10n (1) 4.jar"/>
-	<classpathentry kind="lib" path="D:/FileNetP8/FileNet Jar/Content Engine Jar/stax-api 2.jar"/>
-	<classpathentry kind="lib" path="D:/FileNetP8/FileNet Jar/Content Engine Jar/xlxpScanner 4.jar"/>
-	<classpathentry kind="lib" path="D:/FileNetP8/FileNet Jar/Content Engine Jar/xlxpScannerUtils 4.jar"/>
+	<classpathentry kind="lib" path="D:/FileNetP8/FileNet WorkSpace/EmployeeDocManagerPlugin/lib/Jace 4.jar"/>
+	<classpathentry kind="lib" path="D:/FileNetP8/FileNet WorkSpace/EmployeeDocManagerPlugin/lib/log4j-1.2.16 8.jar"/>
+	<classpathentry kind="lib" path="D:/FileNetP8/FileNet WorkSpace/EmployeeDocManagerPlugin/lib/p8cel10n (1) 4.jar"/>
+	<classpathentry kind="lib" path="D:/FileNetP8/FileNet WorkSpace/EmployeeDocManagerPlugin/lib/stax-api 2.jar"/>
+	<classpathentry kind="lib" path="D:/FileNetP8/FileNet WorkSpace/EmployeeDocManagerPlugin/lib/xlxpScanner 4.jar"/>
+	<classpathentry kind="lib" path="D:/FileNetP8/FileNet WorkSpace/EmployeeDocManagerPlugin/lib/xlxpScannerUtils 4.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
