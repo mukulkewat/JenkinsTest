@@ -36,8 +36,9 @@ define([
 				var submitButton = registry.byId("submitBtn"); // make sure this button exists in UploadDocument.html
 				if (submitButton) {
 					on(submitButton, "click", function() {
-						let docTitle =  registry.byId("docTitle");
-						let docClass =  registry.byId("docClass");
+						let docTitle =  registry.byId("docTitle").get("value");
+						let docClass =  registry.byId("docClass").get("value");
+						console.log("fetched")
 						// ✅ Call plugin service
 						ecm.model.Request.invokePluginService("employeeDoManagerDojo.UploadDocument", "insertMetaData", {
 							requestParams: {
@@ -110,7 +111,7 @@ define([
 				var docClass = this.docClass.get("value");
 				console.log(docTitle)
 				console.log(docClass)
-				e
+				
 			}
 		});
 	});

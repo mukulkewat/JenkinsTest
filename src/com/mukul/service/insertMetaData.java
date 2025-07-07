@@ -77,6 +77,7 @@ public class insertMetaData extends PluginService {
 	public void execute(PluginServiceCallbacks callbacks,
 			HttpServletRequest request, HttpServletResponse response)
 			throws Exception {
+		System.out.println("insertMetaData.execute()");
 		 // 1. Get metadata from request
         String docTitle = request.getParameter("docTitle");
         String docClass = request.getParameter("docClass");
@@ -94,7 +95,7 @@ public class insertMetaData extends PluginService {
 
         // 5. Save document (no content for now, just metadata)
         doc.save(RefreshMode.REFRESH);
-
+        System.err.println("HI");
         // 6. Respond with success JSON
         response.setContentType("application/json");
         PrintWriter out = response.getWriter();
