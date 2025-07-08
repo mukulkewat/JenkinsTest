@@ -9,7 +9,11 @@ define([
 ], function(declare, _LaunchBarPane, template, Memory, ComboBox, Request, Repository) {
 
   return declare("employeeDocManagerDojo.ApplicationSearch", [_LaunchBarPane], {
-    templateString: template,
+	/** @lends employeeDocManagerDojo.UploadDocument.prototype */
+
+	templateString: template,
+    // Set to true if widget template contains DOJO widgets.
+	widgetsInTemplate: true,
     moduleId: "employeeDocManagerDojo.ApplicationSearch",
 
     postCreate: function() {
