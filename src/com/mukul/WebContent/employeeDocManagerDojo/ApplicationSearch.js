@@ -9,8 +9,6 @@ define([
 ], function(declare, _LaunchBarPane, template, Memory, ComboBox, Request, Repository) {
 
   return declare("employeeDocManagerDojo.ApplicationSearch", [_LaunchBarPane], {
-	/** @lends employeeDocManagerDojo.UploadDocument.prototype */
-
 	templateString: template,
     // Set to true if widget template contains DOJO widgets.
 	widgetsInTemplate: true,
@@ -45,7 +43,7 @@ define([
           data: classList,
           idProperty: "id"
         });
-
+		console
 		setTimeout(function () {
 		     console.log("Setting store on ComboBox:", classList);
 		     self.classCombo.set("store", store);
@@ -53,7 +51,7 @@ define([
 
 		     // Force re-render if needed
 		     self.classCombo.startup();
-		   }, 300); // 300ms delay — tweak if needed
+		   }, 3000); // 300ms delay — tweak if needed
 		 });
       
     }

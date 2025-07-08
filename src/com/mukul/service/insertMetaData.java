@@ -74,6 +74,7 @@ public class insertMetaData extends PluginService {
 	 *             logging level is high enough to log errors, information about
 	 *             the exception is logged by IBM Content Navigator.
 	 */
+	@Override
 	public void execute(PluginServiceCallbacks callbacks,
 			HttpServletRequest request, HttpServletResponse response)
 			throws Exception {
