@@ -333,7 +333,7 @@ public class EmployeeDocManager extends Plugin {
 	     */
 	    public PluginFeature[] getFeatures() {
 	    	if (pluginFeatures.length == 0) {
-				pluginFeatures = new PluginFeature[] {new com.mukul.feature.UploadDocument()};
+				pluginFeatures = new PluginFeature[] {new com.mukul.feature.UploadDocument(),new com.mukul.feature.ApplicationSearch()};
 			}
 			return pluginFeatures;
 	    }
