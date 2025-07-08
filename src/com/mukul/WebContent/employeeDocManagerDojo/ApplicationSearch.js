@@ -42,9 +42,16 @@ define([
           idProperty: "id"
         });
 
-        self.classCombo.set("store", store);
-        self.classCombo.set("searchAttr", "name");
-      });
+		setTimeout(function () {
+		     console.log("Setting store on ComboBox:", classList);
+		     self.classCombo.set("store", store);
+		     self.classCombo.set("searchAttr", "name");
+
+		     // Force re-render if needed
+		     self.classCombo.startup();
+		   }, 300); // 300ms delay — tweak if needed
+		 });
+      
     }
   });
 });
