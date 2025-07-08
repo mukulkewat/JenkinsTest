@@ -14,6 +14,7 @@ define([
 
     postCreate: function() {
       this.inherited(arguments);
+	  console.log("Loading document classes..."); 
       this._loadDocumentClasses();
     },
 
