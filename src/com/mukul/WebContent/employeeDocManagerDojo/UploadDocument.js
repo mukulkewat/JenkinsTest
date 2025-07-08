@@ -105,13 +105,13 @@ define([
 				this.logExit("reset");
 			},
 
-			display: function(evt) {
+		/*	display: function(evt) {
 				evt.preventDefault();
 				var docTitle = this.docTitle.get("value");
 				var docClass = this.docClass.get("value");
 				console.log(docTitle)
 				console.log(docClass)
 				
-			}
+			}*/
 		});
 	});
