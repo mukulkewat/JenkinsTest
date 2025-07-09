@@ -78,7 +78,7 @@ define([
 			      template_desc: "BankEmployee"
 			    }
 			  ],
-			  idProperty: "template_name"
+			  idProperty: "name"
 			});
 		
 		setTimeout(function () {
