@@ -9,66 +9,32 @@
 		<div data-dojo-attach-point="centerPane"
 			data-dojo-type="dijit/layout/ContentPane"
 			data-dojo-props="region:'center'">
+			<form id="docForm">
 
-			<head>
-<style>
-body {
-	margin: 40px;
-}
-
-#formContainer {
-	width: 500px;
-	padding: 20px;
-	border: 1px solid #ccc;
-	border-radius: 8px;
-	box-shadow: 2px 2px 10px #aaa;
-	background-color: #f9f9f9;
-}
-
-.formRow {
-	margin-bottom: 15px;
-}
-
-label {
-	display: inline-block;
-	width: 150px;
-	font-weight: bold;
-}
-</style>
-
-			</head>
-			<div id="formContainer">
-				<h2>Employee Registration</h2>
-				<form id="docForm" data-dojo-attach-point="docForm" data-dojo-type="dijit/form/Form"
-					enctype="multipart/form-data">
-
-					<div class="formRow">
-						<label for="docTitle">Doc Title:</label> <input id="docTitle"
-							name="docTitle" data-dojo-type="dijit/form/TextBox"
-							required="true" placeholder="Enter doc title" />
-					</div>
-
-					<div class="formRow">
-						<label for="docClass">Doc Class:</label> <input id="docClass"
-							name="docClass" data-dojo-type="dijit/form/TextBox"
-							required="true" placeholder="enter doc class" />
-					</div>
+				<label for="docTitle">Doc Title:</label> <input id="docTitle"
+					name="docTitle" data-dojo-attach-point="docTitle"
+					data-dojo-type="dijit/form/TextBox" required="true"
+					placeholder="Enter doc title" />
+			   <label for="docClass">Doc Class:</label> <input id="docClass" name="docClass"
+					data-dojo-attach-point="docClass"
+					data-dojo-type="dijit/form/TextBox" required="true"
+					placeholder="Enter doc Class" />
 
 
 
-					<div class="formRow">
+				<!-- <div class="formRow">
 						<label for="file">Doc File:</label> <input id="file" name="file"
 							data-dojo-type="dojox/form/Uploader" required="true" />
-					</div>
+					</div> -->
 
-					<div class="formRow" style="text-align: center;">
-						<button data-dojo-type="dijit/form/Button" type="submit" data-dojo-attach-event="onClick : display">Upload</button>
-						<button data-dojo-type="dijit/form/Button" type="reset">Clear</button>
-					</div>
 
-				</form>
+				<button data-dojo-type="dijit/form/Button"
+				id="submitBtn" data-dojo-attach-point="submitBtn"> Upload</button>
 
-			</div>
+			</form>
+
+
+
 		</div>
 	</div>
 

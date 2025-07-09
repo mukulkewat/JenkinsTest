@@ -2,3 +2,10 @@
     color: #0072c3; /* IBM blue */
     font-size: 18px;
 }
+
+.EmployeeDocManagerLaunchIcon {
+	width: 32px;
+	height: 32px;
+	background: url('images/neurogaint.png') no-repeat;
+	
+}
